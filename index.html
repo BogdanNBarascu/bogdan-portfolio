@@ -35,6 +35,8 @@ nav ul a:hover{color:var(--accent)}
 .topo .up{stroke:#34d399;animation:flowup 1.4s linear infinite}
 .topo rect{fill:var(--panel);stroke:var(--accent);stroke-width:1.5}
 .topo text{fill:var(--text);font:500 12px Poppins,sans-serif;text-anchor:middle}
+.topo .pill{fill:var(--bg);stroke:var(--line);stroke-width:1.5}
+.topo .vt{fill:var(--accent);font-size:11px;font-weight:600}
 .topo .lg{fill:var(--muted);font-size:11px;text-anchor:start}
 @keyframes flowdown{to{stroke-dashoffset:-28}}
 @keyframes flowup{to{stroke-dashoffset:28}}
@@ -80,20 +82,24 @@ footer{text-align:center;padding:26px;color:var(--muted);font-size:.85rem;border
       <p>I’m Bogdan Barascu, a freelance Network Engineer and SysAdmin. I design, manage and monitor networks and Linux/Windows servers for small and medium businesses.</p>
       <a href="#contact" class="btn">Contact me</a><a href="#projects" class="btn ghost">See projects</a>
     </div>
-    <svg class="topo" viewBox="0 0 360 290" role="img" aria-label="Topology: traffic flowing both ways between Internet, FortiGate, switch, Linux, Windows and Zabbix">
-      <line class="down" x1="174" y1="42" x2="174" y2="100"/><line class="up" x1="186" y1="100" x2="186" y2="42"/>
-      <line class="down" x1="174" y1="140" x2="174" y2="165"/><line class="up" x1="186" y1="165" x2="186" y2="140"/>
-      <line class="down" x1="172" y1="191" x2="54" y2="225"/><line class="up" x1="66" y1="225" x2="178" y2="191"/>
-      <line class="down" x1="174" y1="191" x2="174" y2="225"/><line class="up" x1="186" y1="225" x2="186" y2="191"/>
-      <line class="down" x1="188" y1="191" x2="306" y2="225"/><line class="up" x1="294" y1="225" x2="182" y2="191"/>
+    <svg class="topo" viewBox="0 0 360 330" role="img" aria-label="Topology: Internet, FortiGate with inter-VLAN routing, switch with VLAN 99 management, and VLAN 10 Linux, VLAN 20 Windows, VLAN 30 Zabbix, traffic flowing both ways">
+      <line class="down" x1="174" y1="42" x2="174" y2="88"/><line class="up" x1="186" y1="88" x2="186" y2="42"/>
+      <line class="down" x1="174" y1="128" x2="174" y2="185"/><line class="up" x1="186" y1="185" x2="186" y2="128"/>
+      <line class="down" x1="172" y1="211" x2="54" y2="255"/><line class="up" x1="66" y1="255" x2="178" y2="211"/>
+      <line class="down" x1="174" y1="211" x2="174" y2="255"/><line class="up" x1="186" y1="255" x2="186" y2="211"/>
+      <line class="down" x1="188" y1="211" x2="306" y2="255"/><line class="up" x1="294" y1="255" x2="182" y2="211"/>
       <rect x="130" y="12" width="100" height="30" rx="6"/><text x="180" y="32">Internet</text>
-      <rect x="130" y="100" width="100" height="40" rx="6"/><text x="180" y="125">FortiGate</text>
-      <rect x="140" y="165" width="80" height="26" rx="6"/><text x="180" y="182">Switch</text>
-      <rect x="10" y="225" width="100" height="30" rx="6"/><text x="60" y="245">Linux</text>
-      <rect x="130" y="225" width="100" height="30" rx="6"/><text x="180" y="245">Windows</text>
-      <rect x="250" y="225" width="100" height="30" rx="6"/><text x="300" y="245">Zabbix</text>
-      <line class="down" x1="90" y1="276" x2="115" y2="276"/><text class="lg" x="122" y="280">request</text>
-      <line class="up" x1="190" y1="276" x2="215" y2="276"/><text class="lg" x="222" y="280">response</text>
+      <rect x="130" y="88" width="100" height="40" rx="6"/><text x="180" y="113">FortiGate</text>
+      <text class="vt" x="198" y="160" style="text-anchor:start">Inter-VLAN routing</text>
+      <rect x="140" y="185" width="80" height="26" rx="6"/><text x="180" y="202">Switch</text>
+      <line x1="220" y1="198" x2="238" y2="198"/>
+      <rect class="pill" x="238" y="187" width="112" height="22" rx="11"/><text class="vt" x="294" y="202">VLAN 99 MGMT</text>
+      <rect x="10" y="255" width="100" height="30" rx="6"/><text x="60" y="275">Linux</text>
+      <rect x="130" y="255" width="100" height="30" rx="6"/><text x="180" y="275">Windows</text>
+      <rect x="250" y="255" width="100" height="30" rx="6"/><text x="300" y="275">Zabbix</text>
+      <rect class="pill" x="85" y="225" width="56" height="16" rx="8"/><text class="vt" x="113" y="237">VLAN 10</text><rect class="pill" x="152" y="225" width="56" height="16" rx="8"/><text class="vt" x="180" y="237">VLAN 20</text><rect class="pill" x="219" y="225" width="56" height="16" rx="8"/><text class="vt" x="247" y="237">VLAN 30</text>
+      <line class="down" x1="90" y1="311" x2="115" y2="311"/><text class="lg" x="122" y="315">request</text>
+      <line class="up" x1="190" y1="311" x2="215" y2="311"/><text class="lg" x="222" y="315">response</text>
     </svg>
   </header>
 
