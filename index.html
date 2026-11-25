@@ -46,6 +46,11 @@ h2{font-size:1.7rem;margin-bottom:28px;color:var(--accent)}
 .card h3{font-size:1.05rem;margin-bottom:8px}
 .card p,.card li{color:var(--muted);font-size:.93rem}
 .card ul{list-style:none}
+.card li{padding:3px 0}
+.role{display:flex;justify-content:space-between;flex-wrap:wrap;gap:6px 16px;align-items:baseline;margin-bottom:10px}
+.role span{color:var(--accent);font-size:.88rem}
+.card li strong{color:var(--text);font-weight:500}
+.about{margin-top:28px;grid-template-columns:repeat(auto-fit,minmax(300px,1fr))}
 .chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
 .chips span{border:1px solid var(--line);border-radius:999px;padding:3px 12px;font-size:.82rem;color:var(--text)}
 .contact a.row{display:block;padding:14px 0;border-bottom:1px solid var(--line);text-decoration:none}
@@ -60,6 +65,7 @@ footer{text-align:center;padding:26px;color:var(--muted);font-size:.85rem;border
   <strong>Bogdan Barascu</strong>
   <ul>
     <li><a href="#about">About</a></li>
+    <li><a href="#experience">Experience</a></li>
     <li><a href="#skills">Skills</a></li>
     <li><a href="#projects">Projects</a></li>
     <li><a href="#services">Services</a></li>
@@ -93,13 +99,67 @@ footer{text-align:center;padding:26px;color:var(--muted);font-size:.85rem;border
 
   <section id="about">
     <h2>About me</h2>
-    <p class="lead">I work with network and systems infrastructure: I configure VLANs, routing, IPsec VPNs and firewalls, administer Linux and Windows servers, and build Zabbix monitoring with alerts that reach the right people. I also provide remote IT support.</p>
+    <p class="lead">Network engineer and SysAdmin with hands-on experience in Data Center environments, from fiber and copper cabling to servers, switches and incident handling. I also build Zabbix monitoring and provide remote IT support.</p>
+    <div class="groups about">
+      <div class="card"><h3>Fiber and copper cabling</h3><ul>
+        <li>Installing, troubleshooting and maintaining fiber optic and copper cabling in Data Centers</li>
+        <li>Single-Mode (SMF) and MultiMode (MMF) fibers and their applications</li>
+        <li>Ethernet categories Cat5e, Cat6, Cat6A, Cat7 and Cat8 and their use cases</li>
+        <li>Connectors: LC, SC, ST, FC and MPO/MTP</li>
+        <li>Fiber handling: minimum bend radius, cable routing and protection</li>
+        <li>Fiber cleaning with approved tools to prevent signal loss and contamination</li>
+      </ul></div>
+      <div class="card"><h3>Testing and troubleshooting</h3><ul>
+        <li>OTDR: fault detection, cable length, attenuation and splice loss</li>
+        <li>VFL (Visual Fault Locator): fiber breaks and continuity issues</li>
+        <li>Light Source Power Meter (LSPM): optical power and link performance</li>
+        <li>Fiber cleaning kits and cable testers</li>
+        <li>Common Data Center issues: fiber damage, failed ports, network outages and hardware failures</li>
+      </ul></div>
+      <div class="card"><h3>Data Center operations</h3><ul>
+        <li>Replacing failed hard drives in servers and validating RAID rebuild status</li>
+        <li>Server and network switch replacement with minimal downtime</li>
+        <li>Rack and stack, server migrations and equipment decommissioning</li>
+        <li>Installing, labeling and documenting network infrastructure to standards</li>
+        <li>Ticketing systems: incidents, change requests and service requests</li>
+        <li>Data Center procedures, access control policies and safety regulations</li>
+      </ul></div>
+      <div class="card"><h3>Equipment and security</h3><ul>
+        <li>Switches, routers, firewalls and patch panels</li>
+        <li>Enterprise equipment from Cisco, Juniper, HPE, Dell, Arista and Fortinet</li>
+        <li>Basic understanding of penetration testing concepts and security best practices</li>
+      </ul></div>
+    </div>
+  </section>
+
+  <section id="experience">
+    <h2>Experience</h2>
+    <div class="card">
+      <div class="role"><h3>Freelance Field Engineer</h3><span>July 2022 – Present</span></div>
+      <ul>
+        <li><strong>On-site support:</strong> equipment installation, testing and troubleshooting at client locations.</li>
+        <li><strong>Maintenance and repair:</strong> routine maintenance and resolving urgent technical failures.</li>
+        <li><strong>Project evaluation:</strong> analyzing costs and providing technical recommendations for project improvements.</li>
+        <li><strong>Documentation:</strong> recording build steps and site findings, and providing professional reports to clients.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="expertise">
+    <h2>Engineering expertise</h2>
+    <div class="groups">
+      <div class="card"><h3>Advanced troubleshooting</h3><p>Troubleshooting and resolving complex network and security issues across converged platforms, with strategic recommendations for system improvements.</p></div>
+      <div class="card"><h3>Infrastructure management</h3><p>Designing, integrating and maintaining consolidated network services, including switches, routers, firewalls and wireless networks, alongside data center virtualization and storage solutions.</p></div>
+      <div class="card"><h3>Architectural planning</h3><p>Planning engineering architectures and establishing technical standards for interface applications to ensure system scalability and consistency.</p></div>
+      <div class="card"><h3>Capacity and resource planning</h3><p>Proactive evaluations of network systems to optimize resource allocation and lead expansion initiatives.</p></div>
+      <div class="card"><h3>R&amp;D and innovation</h3><p>Researching and evaluating emerging technologies and services, delivering comprehensive proposals for new systems, procedures and organizational transitions.</p></div>
+    </div>
   </section>
 
   <section id="skills">
     <h2>Skills</h2>
     <div class="groups">
-      <div class="card"><h3>Networking</h3><div class="chips"><span>Cisco</span><span>MikroTik</span><span>VLAN</span><span>Routing</span><span>DHCP</span><span>NAT</span></div></div>
+      <div class="card"><h3>Networking</h3><div class="chips"><span>Cisco</span><span>MikroTik</span><span>VLAN</span><span>Routing</span><span>DHCP</span><span>NAT</span><span>Fiber optic</span><span>OTDR</span><span>Structured cabling</span></div></div>
       <div class="card"><h3>Security</h3><div class="chips"><span>FortiGate</span><span>VPN IPsec</span><span>Firewall</span></div></div>
       <div class="card"><h3>Systems</h3><div class="chips"><span>Linux</span><span>Windows Server</span><span>VMware</span></div></div>
       <div class="card"><h3>Monitoring</h3><div class="chips"><span>Zabbix</span><span>Email alerting</span><span>Dashboards</span></div></div>
